@@ -88,20 +88,8 @@ body {
 	right: 0;
 }
 
-.phone-show {
-	display: none;
-}
-
-@media (max-width: 768px) {
-	.phone-show {
-		display: block !important;
-	}
-
-	.pc-show {
-		display: block;
-	}
-
-		@	media (max-width: 768px) {
-		.pc-show {
-				display: none;
-	}
+/*显示*/
+.phone-show{display: none;}
+@media (max-width: 768px){.phone-show{display: block !important;}
+.pc-show{display: block;}
+@media (max-width: 768px){.pc-show{display: none;}
