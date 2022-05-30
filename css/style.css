@@ -1,0 +1,107 @@
+body {
+	background-color: #ebebeb;
+	font-family: Helvetica;
+	font-size: 15px;
+	justify-content: space-evenly;
+	align-items: center;
+	min-height: 100vh;
+}
+
+.box-sw {
+	box-shadow: 0px 4px 6px rgba(0, 0, 0, .12);
+}
+
+
+	/*code from https://www.yisu.com/zixun/399925.html*/
+.card {
+	border: none;
+	border-radius: 6px;
+	-webkit-transition: all 250ms cubic-bezier(0.02, 0.01, 0.47, 1);
+	transition: all 250ms cubic-bezier(.02, .01, .47, 1);
+}
+
+.card:hover {
+	box-shadow: 0 16px 32px 0 rgba(48, 55, 66, 0.15);
+	transform: translate(0, -5px);
+	transition-delay: 0s !important;
+}
+
+.box-shadow {
+	-webkit-box-shadow: 0 0.25rem 1rem rgba(48, 55, 66, 0.15);
+	box-shadow: 0 4px 16px rgba(48, 55, 66, 0.15);
+}
+
+	/*code from https://space.bilibili.com/24100898*/
+.band span {
+	background: #3699d5;
+		/* 视频中的CSS */
+		/* background: #4E5C93; */
+		/* 视频中的PHP */
+		/* background: #FA8A2A; */
+		/* 视频中的SVG */
+		/* background: linear-gradient(to right, #355BC9, #6D38D7); */
+		/* 视频中的Unboxing */
+	color: #fff;
+	width: 225px;
+	font-size: 24px;
+	font-weight: bold;
+	padding: 8px 0;
+	position: absolute;
+	transform: rotate(45deg);
+	left: -25px;
+	top: 30px;
+	text-shadow: 0 1px 1px rgba(0, 0, 0, .2);
+	text-align: center;
+	box-shadow: 0 10px 10px rgba(0, 0, 0, .1);
+		/*   这里其实是有所瑕疵的 */
+		/*   box-shadow:0 10px 10px black;
+  作为阴影 形状是不对的 */
+}
+
+.band {
+	position: absolute;
+	width: 150px;
+	height: 150px;
+	overflow: hidden;
+	top: -10px;
+	right: -10px;
+}
+
+.band::before,
+	.band::after {
+	border: 5px solid #2880b8;
+		/* 视频中的CSS */
+		/* border: 5px solid #434B77; */
+		/* 视频中的PHP，Unboxing同 */
+		/* border: 5px solid #E35B1B; */
+		/* 视频中的SVG */
+	content: '';
+		/*   要加content伪元素才能显示 */
+	position: absolute;
+	border-top-color: transparent;
+	border-right-color: transparent;
+		/*   来形成三角形 */
+}
+
+.band::after {
+	bottom: 0;
+	right: 0;
+}
+
+.phone-show {
+	display: none;
+}
+
+@media (max-width: 768px) {
+	.phone-show {
+		display: block !important;
+	}
+
+	.pc-show {
+		display: block;
+	}
+
+		@	media (max-width: 768px) {
+		.pc-show {
+				display: none;
+	}
