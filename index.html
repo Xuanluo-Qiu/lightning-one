@@ -13,11 +13,12 @@
 	<link rel="Shortcut Icon" href="../img/favicon.ico" type="image/x-icon" />
 </head>
 <body>
-	<div class="phone-show">
-		<script>
+	<script>
+		var weight = document.body.clientWidth;
+		if (weight < 768){
 			alert("目前没有对手机端/小屏幕设备进行适配,慎入。");
-		</script>
-	</div>
+		}
+	</script>
 	<!--导航-->
 	<main style="weight:100%">
 		<header class="p-3 bg-light text-dark box-sw">
