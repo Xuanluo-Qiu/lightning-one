@@ -8,3 +8,9 @@ function scrollFunction() {console.log(121);
         document.getElementById("back-top").style.display = "none";
     }
 }
+
+//暗色模式
+function addDarkmodeWidget() {
+	new Darkmode().showWidget();
+}
+window.addEventListener('load', addDarkmodeWidget);
