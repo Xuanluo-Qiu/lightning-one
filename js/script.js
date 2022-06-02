@@ -12,7 +12,7 @@ function scrollFunction() {console.log(121);
 //暗色模式
 var options = {
 	bottom: "32px", // 定位底部距离 - 默认: '32px'
-	right: "99px", // 定位右边距离 - 默认: '32px'
+	right: "10px", // 定位右边距离 - 默认: '32px'
 	left: "unset", // 定位左边距离 - 默认: 'unset'
 	time: "0.5s", // 默认动画时间: '0.3s'
 	mixColor: "#fff", // 需要改变的颜色 - 默认: '#fff'
