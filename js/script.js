@@ -11,7 +11,7 @@ function scrollFunction() {console.log(121);
 
 //暗色模式
 var options = {
-	bottom: "32px", // 定位底部距离 - 默认: '32px'
+	bottom: "50px", // 定位底部距离 - 默认: '32px'
 	right: "unset", // 定位右边距离 - 默认: '32px'
 	left: "32px", // 定位左边距离 - 默认: 'unset'
 	time: "0.5s", // 默认动画时间: '0.3s'
