@@ -24,10 +24,6 @@ main{
 	transition: all 250ms cubic-bezier(.02, .01, .47, 1);
 }
 
-.darkmode-layer, .darkmode-toggle {
-  z-index: 500;
-}
-
 .card:hover {
 	box-shadow: 0 16px 32px 0 rgba(48, 55, 66, 0.15);
 	transform: translate(0, -5px);
